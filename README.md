@@ -20,7 +20,7 @@ Exploratory data analysis on a dataset of 7,000+ movies scraped from IMDB, explo
 ```
 Movie_Correlation/
 ├── movies.csv                      # Raw data downloaded from Kaggle 
-├── Movie_Correlation.ipynb         # Main analysis notebook
+├── Movie Correlation.ipynb         # Main analysis notebook
 └── README.md
 ```
 
@@ -33,8 +33,14 @@ Movie_Correlation/
 
 ## Key Findings
 
-- **Votes and gross** have the strongest correlation (~0.63) among all feature pairs — blockbusters naturally attract more ratings
-- **Budget and gross** are strongly correlated (~0.74) — higher investment tends to yield higher returns, though not guaranteed
+- **Budget is the strongest driver of gross revenue** (r ≈ 0.74): higher investment tends to yield higher box office, although it is not guaranteed
+- **Votes and gross** are also strongly correlated (r ≈ 0.61), because blockbusters naturally attract more audience engagement
+- **Score (IMDb rating) barely relates to gross** (r ≈ 0.22): a well-rated film is not necessarily a commercial hit
+- **Action** is the highest-grossing genre by a wide margin (~$238B total, ~2.7× Comedy)
+
+## Business takeaway
+
+For a studio or investor, budget and audience engagement (votes) track revenue far more closely than IMDb scores. Genre choice matters as well, because Action and Animation deliver the largest total returns.
 - **Action** is the highest-grossing genre by a significant margin
 
 ## Tools & Libraries
@@ -49,8 +55,8 @@ Movie_Correlation/
 ## How to Run
 
 ```bash
-git clone https://github.com/yourusername/Movie_Correlation.git
+git clone https://github.com/mynguyen09062006-blip/Movie_Correlation.git
 cd Movie_Correlation
 pip install pandas numpy matplotlib seaborn
-jupyter notebook Movie_Correlation.ipynb
+jupyter notebook "Movie Correlation.ipynb"
 ```
